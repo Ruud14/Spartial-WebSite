@@ -4,6 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script> 
+        function openApp () {
+            window.location.replace("spartial://"); 
+        }
+        
         if( navigator.userAgent.match("/android/i") ) {
         
          
@@ -30,5 +34,6 @@
 <body>
     <h1>Spartial test</h1>
     <a href="spartial://">Open spartial app</a>
+    <a href="javascript:openApp();"></a>
 </body>
 </html>
