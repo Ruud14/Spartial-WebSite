@@ -3,6 +3,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> 
+        if( navigator.userAgent.match("/android/i") ) {
+        
+         
+            var appWindow = window.open("spartial://");
+            setTimeout( function () {if (appWindow) {
+                appWindow.location ="https://play.google.com/store/";
+                    }
+                    },1000);
+         
+        }
+        
+         
+        else if( navigator.userAgent.match("/iPhone/i") ) {
+        
+         
+        // redirect to iTunes
+        
+         
+        }
+        
+         </script>
     <title>Spartial</title>
 </head>
 <body>
