@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Spartial</title>
+    <meta name="description" content="App that automatically skips the lesser parts of Spotify songs. Works great for skipping song intros, outros or other song parts that you specify.">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Armata&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam&amp;display=swap">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="shortcut icon" href="Logo5.png"">
 </head>
 
 <body style="background: #212121;">
@@ -39,15 +41,15 @@
             <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 34px;">1. Login on the&nbsp;<a href="https://developer.spotify.com/dashboard/" style="color: #4caf50;">Spotify developer dashboard</a>&nbsp;and click on the&nbsp;<img src="assets/img/CreateAnApp.png" style="width: 139px;height: 28.5px;">&nbsp;button.</p>
             <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 34px;">2. Set the&nbsp;<em>App name</em>&nbsp;to&nbsp;<em>Spartial</em>&nbsp;, put some arbitrary text as the&nbsp;<em>App description</em>&nbsp; and click the&nbsp;<img src="assets/img/create.png" style="width: 90px;height: 31.5px;">&nbsp;button.</p>
             <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 34px;">3. You then land on a new page where you should click on the&nbsp;&nbsp;<img src="assets/img/edit_settings.png" style="width: 155px;height: 31.5px;">&nbsp;button.</p>
-            <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 34px;">4. Add&nbsp;&nbsp;<em>spartial://callback</em>&nbsp; as a redirect url like this:&nbsp;</p>
+            <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 34px;">4. Add&nbsp;&nbsp;<em>spartial://callback</em><button class="btn btn-primary" type="button" style="background: #4caf50;margin-right: 5px;margin-left: 5px;" onclick="onCopyRedirectUrl()"><i class="fa fa-copy"></i></button>&nbsp; as a redirect url like this:&nbsp;</p>
             <div class="row demo-image">
                 <div class="col"><img class="img-fluid" src="assets/img/redirect_url.png">
                     <p>And press&nbsp;<em>ADD</em>.</p>
                 </div>
             </div>
             <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 34px;">5. Add the package ID and and SHA1 fingerprint.&nbsp;</p>
-            <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 50px;">Package ID:&nbsp;<em>com.ruud14.spartial</em></p>
-            <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 50px;">SHA1 fingerprint:&nbsp;<em>5C:A9:AD:18:3A:6E:B4:58:9D:75:86:EF:BA:F0:DE:16:F7:97:4C:57</em></p>
+            <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 50px;">Package ID:&nbsp;<button class="btn btn-primary" type="button" style="background: #4caf50;margin-right: 5px;margin-left: 5px;" onclick="onCopyPackageID()"><i class="fa fa-copy"></i></button><em>com.ruud14.spartial</em></p>
+            <p class="d-xxl-flex option2" style="padding-right: 34px;padding-left: 50px;">SHA1 fingerprint:&nbsp;<button class="btn btn-primary" type="button" style="background: #4caf50;margin-right: 5px;margin-left: 5px;" onclick="onCopyFingerprint()"><i class="fa fa-copy"></i></button><em class="text-break">5C:A9:AD:18:3A:6E:B4:58:9D:75:86:EF:BA:F0:DE:16:F7:97:4C:57</em></p>
             <div class="row demo-image">
                 <div class="col"><img class="img-fluid" src="assets/img/android_packages.png">
                     <p>And, again, press&nbsp;<em>ADD</em>.</p>
