@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+        "namespace": "android_app",
+        "package_name": "com.ruud14.spartial",
+        "sha256_cert_fingerprints":
+        ["DE:76:68:35:0E:C6:D0:75:9C:4D:DC:30:E1:05:10:9B:4A:74:D0:0C:A6:DC:CE:54:C4:39:57:FC:5D:FD:0C:52"]
+    }
+}]
