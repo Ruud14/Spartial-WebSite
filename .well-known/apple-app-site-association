@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "*.com.ruud14.spartial",
+                "paths": ["/share/*"]
+            }
+        ]
+    }
+}
